@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- MAIN CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Portfolio Responsivo | EricksDev</title>
+</head>
+<body>
+    <!-- HEADER DESIGN -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Inicio</a>
+            <a href="#about">Sobre</a>
+            <a href="#services">Serviços</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+    
+    <!-- SECTION INICIO DESIGN -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Olá, Me chamo</h3>
+            <h1>Ericks Oliveira</h1>
+            <h3>Sou um <span class="multiple-text"></span></h3>
+            <p>Aos 18 anos iniciei na programação da TrinityCore projeto de OpenSource. 2019 descobri AzerothCore e então decidi me dedicar na OpenSource como voluntario, com correções e testes de Bugs. Apenas por aprendizado e conhecimento. Atualmente, busco vaga na Area da Porgramação, que foi onde me identifiquei.</p>
+            <div class="social-media">
+                <a href="https://github.com/EricksOliveira" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ericksoliveira" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:ericksoliveira258@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <a href="curriculo/curriculoEricks.pdf" class="btn" download target="_blank">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="img/home.jpeg" alt="">
+        </div>
+    </section>
+
+    <!-- SECTION SOBRE DESIGN -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/sobre.jpeg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">Sobre <span>Mim</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>Gostaria de contar-lhe um pouco da minha trajetória. Trabalhei como Tec. De Informática durante 8 anos. Em seguida trabalhei como Operador de Caixa. No entanto optei por me dedicar totalmente a Programação e Desenvolvimento Web. Vejo que tenho bastante potencial e dedicação na área da Programação! Comecei a programar no jogo chamado World of Warcraft MMORPG, algumas alterações para modificação do jogo, C++ e Lua! Pequenos Websites para criação de contas com sistema HTML, CSS e PHP para conexão com Banco de Dados. Foco, persistência e dedicação são alguns dos meus pontos positivos. O que eu não consigo executar, não me canso de pesquisar e estudar até conseguir solucionar com êxito!</p>
+            <a href="#contact" class="btn">Mais Informações</a>
+        </div>
+    </section>
+
+    <!-- SECTION SERVIÇOS DESIGN -->
+    <section class="services" id="services">
+        <h2 class="heading">Meus <span>Serviços</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>O profissional que trabalha desenvolvendo websites pode ser um web designer (desenvolvedor do layout) ou um web developer (desenvolvedor de sistemas). O desenvolvimento refere-se a um processo de construção e testes do software especifico para a web, com a finalidade de se obter um conjunto de programas, que satisfazem as funções pretendidas, quer em termos de usabilidade dos usuários ou compatibilidade com outros programas existentes.</p>
+                <a href="https://pt.wikipedia.org/wiki/Desenvolvimento_web" class="btn" target="_blank">Ler mais</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Design</h3>
+                <p>Experiência do usuário (EU), do inglês user experience (UX), é o conjunto de elementos e fatores relativos à interação do usuário com um determinado produto, sistema ou serviço cujo resultado gera uma percepção positiva ou negativa.</p>
+                <a href="https://pt.wikipedia.org/wiki/Experi%C3%AAncia_do_usu%C3%A1rio" class="btn" target="_blank">Ler mais</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-brands fa-android"></i>
+                <h3>App Development</h3>
+                <p>O desenvolvimento de aplicativos móveis é o ato ou processo pelo qual um aplicativo móvel é desenvolvido para um ou mais dispositivos móveis, que podem incluir assistentes digitais pessoais (PDA), assistentes digitais empresariais (EDA) ou telefones celulares. Esses aplicativos de software são projetados especificamente para serem executados em dispositivos móveis, levando em consideração inúmeras restrições de hardware.</p>
+                <a href="https://en.wikipedia.org/wiki/Mobile_app_development" class="btn" target="_blank">Ler mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PORTFOLIO DESIGN -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Recentes <span>Projetos</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="img/1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTATO DESIGN -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Meu <span>Contato</span></h2>
+
+        <form action="https://formsubmit.co/ericksoliveira258@gmail.com" method="POST">
+            <div class="input-box">
+                <input type="text" name="Nome" placeholder="Nome Completo" required>
+                <input type="email" name="Email" placeholder="Endereço de Email" requires>
+            </div>
+
+            <div class="input-box">
+                <input type="number" name="numero" placeholder="Numero de Telefone">
+                <input type="text" name="Assunto" placeholder="Assunto" required>
+            </div>
+            <textarea name="textarea" id="" cols="30" rows="10" placeholder="Sua Mensagem" required></textarea>
+            <input type="submit" value="Enviar" class="btn">
+            <input type="reset" value="Resetar" class="btn">
+
+            <input type="hidden" name="_subject" value="Novo Contato!">
+            <input type="text" name="_honey" style="display: none;">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </section>
+
+    <!-- FOOTER DESIGN -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by EricksDev | Todos os Direitos Reservados.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- TYPED JS-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- SCROLL REVEAL JS-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- MAIN JS -->
+    <script src="js/main.js"></script>
+</body>
+</h
