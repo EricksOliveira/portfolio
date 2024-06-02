@@ -11,22 +11,26 @@ menuIcon.onclick = () => {
 /* Scroll Section Active Link */
 
 let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+let mobileNav = document.querySelector('header nav a');
 
-window.onscroll = () => {
-    selection.forEach(sec => {
+    window.onscroll = () => {
+    sections.forEach(sec => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
-            navLinks.forEach.apply(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        };
+        if (top >= offset && top < offset + height) {
+        mobileNav.querySelectorAll(".active").forEach(el => {
+            el.classList.remove("active");
+        });
+        const navLink = mobileNav.querySelector(`[href*='#${id}']`);
+        if (navLink) {
+            navLink.classList.add('active');
+        }
+        }
     });
+ 
 
     /* Sticky Navbar */
     let header = document.querySelector('header');
