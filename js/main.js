@@ -62,3 +62,32 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true,
 });
+
+const changeThemeBtn = document.querySelector("#change-theme");
+
+// Toggle light mode
+function toggleLightMode() {
+  document.body.classList.toggle("light");
+}
+
+// Load dark or light mode
+function loadTheme() {
+  const lightMode = localStorage.getItem("light");
+
+  if (lightMode) {
+    toggleLightMode();
+  }
+}
+
+loadTheme();
+
+changeThemeBtn.addEventListener("change", function () {
+  toggleLightMode();
+
+  // Save or remove light mode from localStorage
+  localStorage.removeItem("light");
+
+  if (document.body.classList.contains("light")) {
+    localStorage.setItem("light", 1);
+  }
+});
