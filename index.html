@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ericks Oliveira | Desenvolvedor Full Stack</title>
-    <meta name="description" content="Portfólio de Ericks Oliveira, desenvolvedor Full Stack Júnior. Projetos web com JavaScript, React, Node.js e PHP, e colaboração open source em C++.">
+    <title data-i18n="meta.title">Ericks Oliveira | Desenvolvedor Full Stack</title>
+    <meta name="description" data-i18n-attr="content:meta.description" content="Portfólio de Ericks Oliveira, desenvolvedor Full Stack Júnior. Projetos web com JavaScript, React, Node.js e PHP, e colaboração open source em C++.">
     <meta name="author" content="Ericks Oliveira">
     <link rel="canonical" href="https://ericksoliveira.github.io/portfolio/">
 
     <!-- Prévia ao compartilhar o link (LinkedIn, WhatsApp, etc.) -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
     <meta property="og:url" content="https://ericksoliveira.github.io/portfolio/">
     <meta property="og:title" content="Ericks Oliveira | Desenvolvedor Full Stack">
     <meta property="og:description" content="Projetos web com JavaScript, React, Node.js e PHP, e colaboração open source em C++.">
@@ -42,21 +44,30 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <!--
+        TRADUÇÃO: os textos em português ficam aqui no HTML.
+        Os textos em inglês e espanhol ficam em js/i18n.js, com a mesma chave do atributo data-i18n.
+    -->
+    <a class="skip-link" href="#conteudo" data-i18n="ui.skip">Pular para o conteúdo</a>
 
     <!-- CABEÇALHO -->
     <header class="header">
-        <a href="#inicio" class="logo" aria-label="Ericks Oliveira, voltar ao início">&lsaquo;/ EricksDev &rsaquo;</a>
+        <a href="#inicio" class="logo" data-i18n-attr="aria-label:ui.logo" aria-label="Ericks Oliveira, voltar ao início">&lsaquo;/ EricksDev &rsaquo;</a>
 
-        <nav class="navbar" id="navbar" aria-label="Navegação principal">
-            <a href="#sobre">Sobre</a>
-            <a href="#stack">Stack</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
+        <nav class="navbar" id="navbar" data-i18n-attr="aria-label:ui.nav" aria-label="Navegação principal">
+            <a href="#sobre" data-i18n="nav.about">Sobre</a>
+            <a href="#stack" data-i18n="nav.stack">Stack</a>
+            <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+            <a href="#contato" data-i18n="nav.contact">Contato</a>
         </nav>
 
         <div class="header-actions">
-            <button class="icon-btn" id="theme-toggle" type="button" aria-label="Alternar tema claro e escuro">
+            <div class="lang-switch" role="group" data-i18n-attr="aria-label:ui.language" aria-label="Idioma">
+                <button type="button" data-lang="pt-BR" lang="pt-BR" aria-label="Português" aria-pressed="true">PT</button>
+                <button type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+                <button type="button" data-lang="es" lang="es" aria-label="Español" aria-pressed="false">ES</button>
+            </div>
+            <button class="icon-btn" id="theme-toggle" type="button" data-i18n-attr="aria-label:ui.theme" aria-label="Alternar tema claro e escuro">
                 <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
                 <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
             </button>
@@ -71,26 +82,27 @@
         <!-- INÍCIO -->
         <section class="hero" id="inicio">
             <div class="hero-text">
-                <p class="hero-hello">Olá, eu sou</p>
+                <p class="hero-hello" data-i18n="hero.hello">Olá, eu sou</p>
                 <h1 class="hero-name">Ericks Oliveira</h1>
-                <p class="hero-role">Desenvolvedor Full Stack Júnior</p>
-                <p class="hero-pitch">
+                <p class="hero-role" data-i18n="hero.role">Desenvolvedor Full Stack Júnior</p>
+                <p class="hero-pitch" data-i18n="hero.pitch">
                     Construo aplicações web com JavaScript, React, Node.js e PHP. Trago 8 anos de experiência
                     como técnico de informática, vivência em atendimento ao cliente e colaboração em um projeto
                     open source de bots com IA escrito em C++.
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+                    <a href="#projetos" class="btn btn-primary" data-i18n="hero.ctaProjects">Ver projetos</a>
                     <a href="curriculo/curriculoEricks.pdf" class="btn btn-ghost" download>
-                        <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Baixar currículo
+                        <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+                        <span data-i18n="hero.ctaCv">Baixar currículo</span>
                     </a>
                 </div>
 
-                <ul class="social" aria-label="Redes e contato">
+                <ul class="social" data-i18n-attr="aria-label:ui.social" aria-label="Redes e contato">
                     <li><a href="https://github.com/EricksOliveira" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/ericksoliveira" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
-                    <li><a href="mailto:ericksoliveira258@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+                    <li><a href="mailto:ericksoliveira258@gmail.com" data-i18n-attr="aria-label:ui.email" aria-label="E-mail"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
                     <li><a href="https://wa.me/5588981756018" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
@@ -99,42 +111,42 @@
             <figure class="terminal" aria-labelledby="terminal-caption">
                 <div class="terminal-bar" aria-hidden="true">
                     <span></span><span></span><span></span>
-                    <p>~/carreira</p>
+                    <p data-i18n="terminal.path">~/carreira</p>
                 </div>
                 <div class="terminal-body">
                     <p class="t-cmd"><span class="t-prompt">$</span> git log --oneline</p>
                     <ol class="t-log">
-                        <li><span class="t-hash">e7a41c2</span> <span class="t-head">(HEAD -&gt; main)</span> feat: dev full stack (JS, React, Node, PHP)</li>
-                        <li><span class="t-hash">b93f0d8</span> feat: open source no mod-playerbots</li>
-                        <li><span class="t-hash">5c1e7aa</span> feat: atendimento ao cliente</li>
-                        <li><span class="t-hash">41d8b36</span> feat: operador de caixa</li>
-                        <li><span class="t-hash">9f02c5e</span> feat: modding de WoW em C++ e Lua</li>
-                        <li><span class="t-hash">0a6d3f1</span> init: técnico de informática (8 anos)</li>
+                        <li><span class="t-hash">e7a41c2</span> <span class="t-head">(HEAD -&gt; main)</span> <span data-i18n="terminal.c1">feat: dev full stack (JS, React, Node, PHP)</span></li>
+                        <li><span class="t-hash">b93f0d8</span> <span data-i18n="terminal.c2">feat: open source no mod-playerbots</span></li>
+                        <li><span class="t-hash">5c1e7aa</span> <span data-i18n="terminal.c3">feat: atendimento ao cliente</span></li>
+                        <li><span class="t-hash">41d8b36</span> <span data-i18n="terminal.c4">feat: operador de caixa</span></li>
+                        <li><span class="t-hash">9f02c5e</span> <span data-i18n="terminal.c5">feat: modding de WoW em C++ e Lua</span></li>
+                        <li><span class="t-hash">0a6d3f1</span> <span data-i18n="terminal.c6">init: técnico de informática (8 anos)</span></li>
                     </ol>
                     <p class="t-cmd t-cursor"><span class="t-prompt">$</span></p>
                 </div>
-                <figcaption id="terminal-caption" class="sr-only">Minha trajetória, do cargo mais recente ao primeiro.</figcaption>
+                <figcaption id="terminal-caption" class="sr-only" data-i18n="terminal.caption">Minha trajetória, do cargo mais recente ao primeiro.</figcaption>
             </figure>
         </section>
 
         <!-- SOBRE -->
         <section class="section about" id="sobre">
             <div class="about-photo">
-                <img src="img/sobre.jpeg" alt="Foto de Ericks Oliveira" width="480" height="560" loading="lazy">
+                <img src="img/sobre.jpeg" data-i18n-attr="alt:about.photoAlt" alt="Foto de Ericks Oliveira" width="480" height="560" loading="lazy">
             </div>
 
             <div class="about-text">
-                <h2 class="section-title">Sobre mim</h2>
-                <p>
+                <h2 class="section-title" data-i18n="about.title">Sobre mim</h2>
+                <p data-i18n="about.p1">
                     Minha relação com tecnologia vem de longe: trabalhei 8 anos como técnico de informática,
                     resolvendo problemas e dando suporte a usuários no dia a dia.
                 </p>
-                <p>
+                <p data-i18n="about.p2">
                     Programar virou paixão quando comecei a modificar servidores de World of Warcraft. Escrevi
                     scripts em C++ e Lua e criei sites de cadastro de contas com HTML, CSS, JavaScript e PHP,
                     integrados a um banco MySQL.
                 </p>
-                <p>
+                <p data-i18n="about.p3">
                     Depois de passar pelo varejo e pelo atendimento ao cliente, decidi me dedicar totalmente ao
                     desenvolvimento. Hoje colaboro com o mod-playerbots, um módulo open source que usa IA para
                     simular jogadores reais, e sigo construindo projetos web.
@@ -142,16 +154,16 @@
 
                 <ul class="strengths">
                     <li>
-                        <h3>Base técnica</h3>
-                        <p>Anos diagnosticando e resolvendo problemas me deram método para depurar código.</p>
+                        <h3 data-i18n="about.s1Title">Base técnica</h3>
+                        <p data-i18n="about.s1Text">Anos diagnosticando e resolvendo problemas me deram método para depurar código.</p>
                     </li>
                     <li>
-                        <h3>Foco em quem usa</h3>
-                        <p>O atendimento ao cliente me ensinou a entender a necessidade antes de escrever a solução.</p>
+                        <h3 data-i18n="about.s2Title">Foco em quem usa</h3>
+                        <p data-i18n="about.s2Text">O atendimento ao cliente me ensinou a entender a necessidade antes de escrever a solução.</p>
                     </li>
                     <li>
-                        <h3>Código em comunidade</h3>
-                        <p>Colaboro em um projeto open source em C++ mantido pela comunidade.</p>
+                        <h3 data-i18n="about.s3Title">Código em comunidade</h3>
+                        <p data-i18n="about.s3Text">Colaboro em um projeto open source em C++ mantido pela comunidade.</p>
                     </li>
                 </ul>
             </div>
@@ -159,12 +171,12 @@
 
         <!-- STACK -->
         <section class="section stack" id="stack">
-            <h2 class="section-title">Stack</h2>
-            <p class="section-lead">Tecnologias que uso nos meus projetos.</p>
+            <h2 class="section-title" data-i18n="stack.title">Stack</h2>
+            <p class="section-lead" data-i18n="stack.lead">Tecnologias que uso nos meus projetos.</p>
 
             <dl class="stack-grid">
                 <div class="stack-row">
-                    <dt>Front-end</dt>
+                    <dt data-i18n="stack.front">Front-end</dt>
                     <dd>
                         <span><i class="fa-brands fa-html5" aria-hidden="true"></i>HTML</span>
                         <span><i class="fa-brands fa-css3-alt" aria-hidden="true"></i>CSS</span>
@@ -174,7 +186,7 @@
                     </dd>
                 </div>
                 <div class="stack-row">
-                    <dt>Back-end</dt>
+                    <dt data-i18n="stack.back">Back-end</dt>
                     <dd>
                         <span><i class="fa-brands fa-node-js" aria-hidden="true"></i>Node.js</span>
                         <span><i class="fa-brands fa-php" aria-hidden="true"></i>PHP</span>
@@ -183,7 +195,7 @@
                     </dd>
                 </div>
                 <div class="stack-row">
-                    <dt>Dados e cloud</dt>
+                    <dt data-i18n="stack.data">Dados e cloud</dt>
                     <dd>
                         <span><i class="fa-solid fa-database" aria-hidden="true"></i>MySQL</span>
                         <span><i class="fa-brands fa-aws" aria-hidden="true"></i>AWS</span>
@@ -191,11 +203,11 @@
                     </dd>
                 </div>
                 <div class="stack-row">
-                    <dt>Ferramentas</dt>
+                    <dt data-i18n="stack.tools">Ferramentas</dt>
                     <dd>
                         <span><i class="fa-brands fa-git-alt" aria-hidden="true"></i>Git</span>
                         <span><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</span>
-                        <span><i class="fa-solid fa-robot" aria-hidden="true"></i>IA aplicada a bots</span>
+                        <span><i class="fa-solid fa-robot" aria-hidden="true"></i><span data-i18n="stack.ai">IA aplicada a bots</span></span>
                     </dd>
                 </div>
             </dl>
@@ -203,94 +215,94 @@
 
         <!-- PROJETOS -->
         <section class="section projects" id="projetos">
-            <h2 class="section-title">Projetos</h2>
-            <p class="section-lead">Do open source em C++ às aplicações web.</p>
+            <h2 class="section-title" data-i18n="projects.title">Projetos</h2>
+            <p class="section-lead" data-i18n="projects.lead">Do open source em C++ às aplicações web.</p>
 
             <div class="projects-list">
 
                 <article class="project project-featured">
-                    <img src="img/5.jpg" alt="Tela do projeto mod-playerbots" loading="lazy">
+                    <img src="img/5.jpg" data-i18n-attr="alt:projects.p1Alt" alt="Tela do projeto mod-playerbots" loading="lazy">
                     <div class="project-body">
-                        <p class="project-badge"><i class="fa-solid fa-code-branch" aria-hidden="true"></i> Colaboração open source</p>
+                        <p class="project-badge"><i class="fa-solid fa-code-branch" aria-hidden="true"></i> <span data-i18n="projects.badge">Colaboração open source</span></p>
                         <h3>mod-playerbots</h3>
-                        <p>
+                        <p data-i18n="projects.p1Text">
                             Módulo do AzerothCore que adiciona a um servidor de World of Warcraft bots com
                             comportamento de jogadores reais. Com ele, novos jogadores conseguem fazer o conteúdo
                             do jogo sem depender de outras pessoas online.
                         </p>
-                        <ul class="tags" aria-label="Tecnologias">
-                            <li>C++</li><li>IA</li><li>Open source</li>
+                        <ul class="tags" data-i18n-attr="aria-label:ui.tags" aria-label="Tecnologias">
+                            <li>C++</li><li data-i18n="tag.ai">IA</li><li>Open source</li>
                         </ul>
                         <div class="project-links">
                             <a href="https://github.com/liyunfan1223/mod-playerbots" target="_blank" rel="noopener" class="btn btn-small">
-                                <i class="fa-brands fa-github" aria-hidden="true"></i> Ver repositório
+                                <i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="btn.repo">Ver repositório</span>
                             </a>
                         </div>
                     </div>
                 </article>
 
                 <article class="project">
-                    <img src="img/3.jpg" alt="Tela de um servidor AzerothCore" loading="lazy">
+                    <img src="img/3.jpg" data-i18n-attr="alt:projects.p2Alt" alt="Tela de um servidor AzerothCore" loading="lazy">
                     <div class="project-body">
-                        <h3>Servidor AzerothCore</h3>
-                        <p>
+                        <h3 data-i18n="projects.p2Title">Servidor AzerothCore</h3>
+                        <p data-i18n="projects.p2Text">
                             Modificações em C++ e Lua para o emulador open source de World of Warcraft e site de
                             cadastro de contas em PHP integrado ao banco MySQL.
                         </p>
-                        <ul class="tags" aria-label="Tecnologias">
+                        <ul class="tags" data-i18n-attr="aria-label:ui.tags" aria-label="Tecnologias">
                             <li>C++</li><li>Lua</li><li>PHP</li><li>MySQL</li>
                         </ul>
                         <div class="project-links">
                             <a href="https://www.azerothcore.org/" target="_blank" rel="noopener" class="btn btn-small">
-                                <i class="fa-solid fa-globe" aria-hidden="true"></i> Conhecer o AzerothCore
+                                <i class="fa-solid fa-globe" aria-hidden="true"></i> <span data-i18n="btn.azeroth">Conhecer o AzerothCore</span>
                             </a>
                         </div>
                     </div>
                 </article>
 
                 <article class="project">
-                    <img src="img/4.jpg" alt="Tela da aplicação de previsão do tempo" loading="lazy">
+                    <img src="img/4.jpg" data-i18n-attr="alt:projects.p3Alt" alt="Tela da aplicação de previsão do tempo" loading="lazy">
                     <div class="project-body">
-                        <h3>Previsão do Tempo</h3>
-                        <p>Aplicação web que consome uma API de clima e exibe a previsão do tempo.</p>
-                        <ul class="tags" aria-label="Tecnologias">
-                            <li>JavaScript</li><li>API REST</li><li>HTML</li><li>CSS</li>
+                        <h3 data-i18n="projects.p3Title">Previsão do Tempo</h3>
+                        <p data-i18n="projects.p3Text">Aplicação web que consome uma API de clima e exibe a previsão do tempo.</p>
+                        <ul class="tags" data-i18n-attr="aria-label:ui.tags" aria-label="Tecnologias">
+                            <li>JavaScript</li><li data-i18n="tag.api">API REST</li><li>HTML</li><li>CSS</li>
                         </ul>
                         <div class="project-links">
                             <a href="https://github.com/EricksOliveira/previsao-tempo" target="_blank" rel="noopener" class="btn btn-small">
-                                <i class="fa-brands fa-github" aria-hidden="true"></i> Ver código
+                                <i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="btn.code">Ver código</span>
                             </a>
                         </div>
                     </div>
                 </article>
 
                 <article class="project">
-                    <img src="img/1.jpg" alt="Tela do dashboard da startup GoSafe" loading="lazy">
+                    <img src="img/1.jpg" data-i18n-attr="alt:projects.p4Alt" alt="Tela do dashboard da startup GoSafe" loading="lazy">
                     <div class="project-body">
-                        <h3>Dashboard GoSafe</h3>
-                        <p>Dashboard criado para a startup GoSafe com Bootstrap 5.</p>
-                        <ul class="tags" aria-label="Tecnologias">
+                        <h3 data-i18n="projects.p4Title">Dashboard GoSafe</h3>
+                        <p data-i18n="projects.p4Text">Dashboard criado para a startup GoSafe com Bootstrap 5.</p>
+                        <ul class="tags" data-i18n-attr="aria-label:ui.tags" aria-label="Tecnologias">
                             <li>Bootstrap 5</li><li>HTML</li><li>CSS</li>
                         </ul>
                         <div class="project-links">
                             <a href="https://www.youtube.com/watch?v=Nppl5-LuEis" target="_blank" rel="noopener" class="btn btn-small">
-                                <i class="fa-brands fa-youtube" aria-hidden="true"></i> Assistir demonstração
+                                <i class="fa-brands fa-youtube" aria-hidden="true"></i> <span data-i18n="btn.demo">Assistir demonstração</span>
                             </a>
                         </div>
                     </div>
                 </article>
 
                 <article class="project">
-                    <img src="img/2.jpg" alt="Tela do relógio digital" loading="lazy">
+                    <img src="img/2.jpg" data-i18n-attr="alt:projects.p5Alt" alt="Tela do relógio digital" loading="lazy">
                     <div class="project-body">
-                        <h3>Relógio Digital</h3>
-                        <p>Relógio digital com interface construída em HTML e CSS.</p>
-                        <ul class="tags" aria-label="Tecnologias">
+                        <h3 data-i18n="projects.p5Title">Relógio Digital</h3>
+                        <p data-i18n="projects.p5Text">Relógio digital com interface construída em HTML e CSS.</p>
+                        <ul class="tags" data-i18n-attr="aria-label:ui.tags" aria-label="Tecnologias">
                             <li>HTML</li><li>CSS</li>
                         </ul>
                         <div class="project-links">
                             <a href="https://github.com/EricksOliveira/Relogio-Digital" target="_blank" rel="noopener" class="btn btn-small">
-                                <i class="fa-brands fa-github" aria-hidden="true"></i> Ver código
+                                <i class="fa-brands fa-github" aria-hidden="true"></i> <span data-i18n="btn.code">Ver código</span>
                             </a>
                         </div>
                     </div>
@@ -299,7 +311,7 @@
             </div>
 
             <p class="projects-more">
-                Mais projetos no meu
+                <span data-i18n="projects.more">Mais projetos no meu</span>
                 <a href="https://github.com/EricksOliveira?tab=repositories" target="_blank" rel="noopener">GitHub</a>.
             </p>
         </section>
@@ -307,8 +319,8 @@
         <!-- CONTATO -->
         <section class="section contact" id="contato">
             <div class="contact-intro">
-                <h2 class="section-title">Vamos conversar?</h2>
-                <p>
+                <h2 class="section-title" data-i18n="contact.title">Vamos conversar?</h2>
+                <p data-i18n="contact.text">
                     Estou em busca de oportunidades como desenvolvedor. Mande uma mensagem pelo formulário
                     ou fale comigo direto por um destes canais.
                 </p>
@@ -321,33 +333,35 @@
 
             <form class="contact-form" action="https://formsubmit.co/ericksoliveira258@gmail.com" method="POST">
                 <div class="field">
-                    <label for="nome">Nome</label>
+                    <label for="nome" data-i18n="form.name">Nome</label>
                     <input type="text" id="nome" name="Nome" autocomplete="name" required>
                 </div>
                 <div class="field">
-                    <label for="email">E-mail</label>
+                    <label for="email" data-i18n="form.email">E-mail</label>
                     <input type="email" id="email" name="Email" autocomplete="email" required>
                 </div>
                 <div class="field">
-                    <label for="empresa">Empresa <span class="optional">(opcional)</span></label>
+                    <label for="empresa"><span data-i18n="form.company">Empresa</span> <span class="optional" data-i18n="form.optional">(opcional)</span></label>
                     <input type="text" id="empresa" name="Empresa" autocomplete="organization">
                 </div>
                 <div class="field">
-                    <label for="assunto">Assunto</label>
+                    <label for="assunto" data-i18n="form.subject">Assunto</label>
                     <input type="text" id="assunto" name="Assunto" required>
                 </div>
                 <div class="field field-full">
-                    <label for="mensagem">Mensagem</label>
+                    <label for="mensagem" data-i18n="form.message">Mensagem</label>
                     <textarea id="mensagem" name="Mensagem" rows="6" required></textarea>
                 </div>
 
+                <!-- Mostra no e-mail recebido em qual idioma a pessoa estava navegando -->
+                <input type="hidden" name="Idioma" id="form-language" value="Português">
                 <input type="hidden" name="_next" value="https://ericksoliveira.github.io/portfolio/#contato">
                 <input type="hidden" name="_subject" value="Novo contato pelo portfólio">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
-                <button type="submit" class="btn btn-primary field-full">Enviar mensagem</button>
+                <button type="submit" class="btn btn-primary field-full" data-i18n="form.submit">Enviar mensagem</button>
             </form>
         </section>
     </main>
@@ -355,9 +369,11 @@
     <!-- RODAPÉ -->
     <footer class="footer">
         <p>&copy; <span id="year">2026</span> Ericks Oliveira</p>
-        <a href="#inicio" class="footer-top" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+        <a href="#inicio" class="footer-top" data-i18n-attr="aria-label:ui.top" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
     </footer>
 
-    <script src="js/main.js" defer></script>
+    <!-- A tradução roda antes do main.js para a página já aparecer no idioma escolhido -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
