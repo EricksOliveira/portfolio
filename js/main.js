@@ -19,7 +19,7 @@ const navbar = document.getElementById('navbar');
 function setMenu(open) {
     navbar.classList.toggle('open', open);
     menuToggle.setAttribute('aria-expanded', String(open));
-    menuToggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    menuToggle.setAttribute('aria-label', window.t(open ? 'ui.menuClose' : 'ui.menuOpen'));
     menuToggle.querySelector('i').className = open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
 }
 
