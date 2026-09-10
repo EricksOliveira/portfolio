@@ -10,7 +10,7 @@ Site pessoal com meus projetos, stack e formas de contato.
 
 ## Sobre
 
-Sou desenvolvedor Full Stack Júnior em transição de carreira, com 8 anos de experiência como técnico de informática e vivência em atendimento ao cliente. Construo aplicações web com JavaScript, React, Node.js e PHP, e colaboro com o [mod-playerbots](https://github.com/liyunfan1223/mod-playerbots), módulo open source em C++ do AzerothCore.
+Sou desenvolvedor Full Stack Júnior em transição de carreira, com 8 anos de experiência como técnico de informática e vivência em atendimento ao cliente. Construo aplicações web com JavaScript, React, Node.js e PHP, e colaboro com o [mod-playerbots](https://github.com/liyunfan1223/mod-playerbots), módulo open source em C++ do [AzerothCore](https://github.com/azerothcore/azerothcore-wotlk).
 
 ## Tecnologias do site
 
