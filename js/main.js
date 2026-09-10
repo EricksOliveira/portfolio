@@ -1,93 +1,64 @@
-/* Toggle Icon Navbar */
+// ===== Tema claro / escuro =====
+const root = document.documentElement;
+const themeToggle = document.getElementById('theme-toggle');
 
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+themeToggle.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try {
+        localStorage.setItem('theme', next);
+    } catch (e) {
+        // Navegador sem acesso ao armazenamento: o tema só não fica salvo
+    }
+});
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('fa-xmark');
-    navbar.classList.toggle('active');
+// ===== Menu mobile =====
+const menuToggle = document.getElementById('menu-toggle');
+const navbar = document.getElementById('navbar');
+
+function setMenu(open) {
+    navbar.classList.toggle('open', open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    menuToggle.querySelector('i').className = open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
 }
 
-/* Scroll Section Active Link */
+menuToggle.addEventListener('click', () => {
+    setMenu(!navbar.classList.contains('open'));
+});
 
-let sections = document.querySelectorAll('section');
-let mobileNav = document.querySelector('header nav a');
+navbar.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => setMenu(false));
+});
 
-    window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && navbar.classList.contains('open')) {
+        setMenu(false);
+        menuToggle.focus();
+    }
+});
 
-        if (top >= offset && top < offset + height) {
-        mobileNav.querySelectorAll(".active").forEach(el => {
-            el.classList.remove("active");
+// ===== Borda do cabeçalho ao rolar =====
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+    header.classList.toggle('is-scrolled', window.scrollY > 10);
+}, { passive: true });
+
+// ===== Link ativo conforme a seção visível =====
+const navLinks = navbar.querySelectorAll('a');
+const sections = document.querySelectorAll('main section[id]');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach((link) => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
         });
-        const navLink = mobileNav.querySelector(`[href*='#${id}']`);
-        if (navLink) {
-            navLink.classList.add('active');
-        }
-        }
     });
- 
+}, { rootMargin: '-45% 0px -50% 0px' });
 
-    /* Sticky Navbar */
-    let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 100);
+sections.forEach((section) => observer.observe(section));
 
-    /* Remove Toggle Icon and Navbar */
-    menuIcon.classList.remove('fa-xmark');
-    navbar.classList.remove('active');
-};
-
-/* Scroll Reveal */
-ScrollReveal({
-    distance: '80px',
-    duration: 2000,
-    delay: 200,
-    reset: true
-});
-
-ScrollReveal().reveal('.home-conent, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .projects-box, .contact form', { origin: 'buttom' });
-ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right' });
-
-/* Typed JS */
-const typed = new Typed('.multiple-text', {
-    strings: ['Desenvolvedor Frontend', 'Programador Backend'],
-    typeSpeed: 70,
-    backSpeed: 70,
-    backDelay: 1000,
-    loop: true,
-});
-
-const changeThemeBtn = document.querySelector("#change-theme");
-
-// Toggle light mode
-function toggleLightMode() {
-  document.body.classList.toggle("light");
-}
-
-// Load dark or light mode
-function loadTheme() {
-  const lightMode = localStorage.getItem("light");
-
-  if (lightMode) {
-    toggleLightMode();
-  }
-}
-
-loadTheme();
-
-changeThemeBtn.addEventListener("change", function () {
-  toggleLightMode();
-
-  // Save or remove light mode from localStorage
-  localStorage.removeItem("light");
-
-  if (document.body.classList.contains("light")) {
-    localStorage.setItem("light", 1);
-  }
-});
+// ===== Ano atual no rodapé =====
+document.getElementById('year').textContent = new Date().getFullYear();
