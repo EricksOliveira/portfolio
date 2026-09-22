@@ -630,6 +630,12 @@ ol {
     border-right: 1px solid var(--line);
 }
 
+.project img.img-contain {
+    object-fit: contain;
+    padding: clamp(1rem, 3vw, 2rem);
+    background: var(--surface);
+}
+
 .project-featured .project-body {
     padding: clamp(1.5rem, 3.5vw, 2.5rem);
     justify-content: center;
