@@ -54,6 +54,7 @@ const translations = {
         'hero.pitch': 'I build web applications with JavaScript, React, Node.js and PHP. I bring 8 years of experience as an IT technician, a background in customer service, and contributions to an open source AI bot project written in C++.',
         'hero.ctaProjects': 'View projects',
         'hero.ctaCv': 'Download CV',
+        'hero.cvFile': 'curriculo/Resume_Ericks_Oliveira_EN.pdf',
 
         'terminal.path': '~/career',
         'terminal.c1': 'feat: full stack dev (JS, React, Node, PHP)',
@@ -149,6 +150,7 @@ const translations = {
         'hero.pitch': 'Desarrollo aplicaciones web con JavaScript, React, Node.js y PHP. Aporto 8 años de experiencia como técnico informático, trayectoria en atención al cliente y colaboración en un proyecto open source de bots con IA escrito en C++.',
         'hero.ctaProjects': 'Ver proyectos',
         'hero.ctaCv': 'Descargar CV',
+        'hero.cvFile': 'curriculo/Curriculum_Ericks_Oliveira_ES.pdf',
 
         'terminal.path': '~/carrera',
         'terminal.c1': 'feat: dev full stack (JS, React, Node, PHP)',
