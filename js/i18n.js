@@ -102,6 +102,9 @@ const translations = {
         'projects.p5Alt': 'Screenshot of the digital clock',
         'projects.p5Title': 'Digital Clock',
         'projects.p5Text': 'A digital clock with an interface built in HTML and CSS.',
+        'projects.p6Alt': 'Trading bot panel with a BTCUSDT candlestick chart',
+        'projects.p6Title': 'Trading Bot',
+        'projects.p6Text': 'A Binance trading bot with a desktop panel: live candlestick chart, orders with stops, backtesting on real historical data and strategies such as moving average crossover and Turtle Trading. It runs on the testnet, with play money.',
         'projects.more': 'More projects on my',
 
         'tag.ai': 'AI',
@@ -198,6 +201,9 @@ const translations = {
         'projects.p5Alt': 'Captura del reloj digital',
         'projects.p5Title': 'Reloj Digital',
         'projects.p5Text': 'Reloj digital con interfaz construida en HTML y CSS.',
+        'projects.p6Alt': 'Panel del robot de trading con gráfico de velas de BTCUSDT',
+        'projects.p6Title': 'Robot de Trading',
+        'projects.p6Text': 'Robot de trading para Binance con panel de escritorio: gráfico de velas en vivo, órdenes con stop, backtest con el histórico real y estrategias como cruce de medias y Tortugas. Funciona en la testnet, con dinero ficticio.',
         'projects.more': 'Más proyectos en mi',
 
         'tag.ai': 'IA',
