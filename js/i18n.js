@@ -92,7 +92,7 @@ const translations = {
         'projects.p1Text': 'An AzerothCore module that adds bots behaving like real players to a World of Warcraft server. It lets new players complete the game content without depending on other people being online.',
         'projects.p2Alt': 'AzerothCore logo',
         'projects.p2Title': 'AzerothCore Open Source',
-        'projects.p2Text': 'C++ and Lua modifications for the open source World of Warcraft emulator, plus an account registration website in PHP connected to a MySQL database.',
+        'projects.p2Text': 'I contribute to the open source World of Warcraft emulator: more than 100 of my pull requests have been merged into the official project, fixing spells, combat, raid bosses and game data in C++ and SQL. Before that, I made Lua modifications and an account registration website in PHP with MySQL.',
         'projects.p3Alt': 'Screenshot of the weather forecast app',
         'projects.p3Title': 'Weather Forecast',
         'projects.p3Text': 'A web app that consumes a weather API and displays the forecast.',
@@ -111,6 +111,7 @@ const translations = {
         'tag.api': 'REST API',
 
         'btn.repo': 'View repository',
+        'btn.contrib': 'View contributions',
         'btn.azeroth': 'Explore AzerothCore',
         'btn.code': 'View code',
         'btn.demo': 'Watch demo',
@@ -191,7 +192,7 @@ const translations = {
         'projects.p1Text': 'Módulo de AzerothCore que añade a un servidor de World of Warcraft bots que se comportan como jugadores reales. Con él, los nuevos jugadores pueden completar el contenido del juego sin depender de otras personas conectadas.',
         'projects.p2Alt': 'Logo de AzerothCore',
         'projects.p2Title': 'AzerothCore Open Source',
-        'projects.p2Text': 'Modificaciones en C++ y Lua para el emulador open source de World of Warcraft y un sitio de registro de cuentas en PHP conectado a una base de datos MySQL.',
+        'projects.p2Text': 'Colaboro con el emulador open source de World of Warcraft: ya son más de 100 pull requests aceptados en el proyecto oficial, corrigiendo hechizos, combate, jefes de banda y datos del juego en C++ y SQL. Antes de eso, hice modificaciones en Lua y un sitio de registro de cuentas en PHP con MySQL.',
         'projects.p3Alt': 'Captura de la aplicación del pronóstico del tiempo',
         'projects.p3Title': 'Pronóstico del Tiempo',
         'projects.p3Text': 'Aplicación web que consume una API del clima y muestra el pronóstico.',
@@ -210,6 +211,7 @@ const translations = {
         'tag.api': 'API REST',
 
         'btn.repo': 'Ver repositorio',
+        'btn.contrib': 'Ver contribuciones',
         'btn.azeroth': 'Conocer AzerothCore',
         'btn.code': 'Ver código',
         'btn.demo': 'Ver demostración',
