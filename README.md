@@ -1,3 +1,7 @@
+<p align="center">
+  <strong>Português</strong> · <a href="README.en.md">English</a> · <a href="README.es.md">Español</a>
+</p>
+
 <h1 align="center">Portfólio | Ericks Oliveira</h1>
 
 <p align="center">
