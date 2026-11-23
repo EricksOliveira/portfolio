@@ -12,16 +12,14 @@
     <rect width="960" height="540" fill="url(#bg)"/>
     <rect width="960" height="540" fill="url(#glow)"/>
 
-    <text x="60" y="110" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700" fill="#ffc000" letter-spacing="2">KILL STREAK</text>
-    <text x="62" y="150" font-family="Consolas, 'JetBrains Mono', monospace" font-size="20" fill="#9a8fb0">mod-killstrike · AzerothCore 3.3.5a</text>
+    <text x="56" y="108" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" fill="#ffc000" letter-spacing="2">KILL STREAK</text>
+    <text x="60" y="152" font-family="Consolas, 'JetBrains Mono', monospace" font-size="26" fill="#9a8fb0">mod-killstrike · AzerothCore</text>
 
-    <rect x="40" y="190" width="880" height="310" rx="10" fill="#000" fill-opacity=".55" stroke="#ffffff" stroke-opacity=".12"/>
-    <g font-family="Consolas, 'JetBrains Mono', monospace" font-size="21">
-        <text x="64" y="240"><tspan fill="#ff8000">[System KillStrike]: </tspan><tspan fill="#ffff00">TRIPLE KILL! </tspan><tspan fill="#81cf42">Ericks</tspan><tspan fill="#e6e6e6"> is on a 3 kill streak!</tspan></text>
-        <text x="64" y="285"><tspan fill="#ff8000">[System KillStrike]: </tspan><tspan fill="#ff4000">UNSTOPPABLE! </tspan><tspan fill="#81cf42">Ericks</tspan><tspan fill="#e6e6e6"> is on a 10 kill streak!</tspan></text>
-        <text x="64" y="330"><tspan fill="#ff8000">[System KillStrike]: </tspan><tspan fill="#a335ee">GODLIKE! </tspan><tspan fill="#81cf42">Ericks</tspan><tspan fill="#e6e6e6"> is on a 30 kill streak!</tspan></text>
-        <text x="64" y="375"><tspan fill="#00ff00">You earned a reward for your 30 kill streak!</tspan></text>
-        <text x="64" y="420"><tspan fill="#ff8000">[System KillStrike]: </tspan><tspan fill="#a335ee">BOUNTY! </tspan><tspan fill="#81cf42">Ericks</tspan><tspan fill="#e6e6e6"> was last seen in </tspan><tspan fill="#ffff00">Wintergrasp</tspan></text>
-        <text x="64" y="465"><tspan fill="#ff8000">[System KillStrike]: </tspan><tspan fill="#81cf42">Valtor</tspan><tspan fill="#e6e6e6"> has claimed the bounty on </tspan><tspan fill="#81cfcf">Ericks</tspan><tspan fill="#e6e6e6">!</tspan></text>
+    <rect x="36" y="188" width="888" height="320" rx="12" fill="#000" fill-opacity=".55" stroke="#ffffff" stroke-opacity=".12"/>
+    <g font-family="Consolas, 'JetBrains Mono', monospace" font-size="34" font-weight="600">
+        <text x="64" y="257"><tspan fill="#ffff00">TRIPLE KILL! </tspan><tspan fill="#81cf42">Ericks</tspan><tspan fill="#e6e6e6">: 3 kill streak</tspan></text>
+        <text x="64" y="327"><tspan fill="#a335ee">GODLIKE! </tspan><tspan fill="#81cf42">Ericks</tspan><tspan fill="#e6e6e6">: 30 kill streak</tspan></text>
+        <text x="64" y="397"><tspan fill="#a335ee">BOUNTY! </tspan><tspan fill="#81cf42">Ericks</tspan><tspan fill="#e6e6e6"> in </tspan><tspan fill="#ffff00">Wintergrasp</tspan></text>
+        <text x="64" y="467"><tspan fill="#81cf42">Valtor</tspan><tspan fill="#e6e6e6"> claimed the bounty!</tspan></text>
     </g>
 </svg>
